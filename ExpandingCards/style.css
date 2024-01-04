@@ -1,0 +1,31 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+img{
+  width: 80px;
+  height: 470px;
+  border-radius: 9px;
+  margin: 3px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); /*hace que la animacion vaya despacio al principio y luego acelere un poco y frene al final*/
+  cursor: pointer;
+  object-fit: cover; /*esto hace que las imagenes no se achiquen tanto cuando estan chiquitas*/
+}
+img.expand{
+  width: 500px;
+}
+div{
+  position: relative; /*para que los textitos esten en la esquina inferior*/
+}
+h3{
+  position:absolute;
+  bottom: 0;
+  left: 10px;
+  color: white;
+}
