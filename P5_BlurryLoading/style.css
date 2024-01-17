@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  filter: blur(0px);
+}
+
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  font-weight: bold;
+  color: white;
+  filter: blur(0px);
+}
