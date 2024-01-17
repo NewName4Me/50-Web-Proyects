@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: lightslategray;
+  color: black;
+  overflow-x: hidden;
+  margin: 0;
+  box-sizing: border-box;
+}
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+.container {
+  background-color: whitesmoke;
+  transform-origin: top left;
+  transition: all 0.3s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+.container.show-nav {
+  position: fixed;
+  transform: rotate(-20deg);
+}
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+.circle {
+  background-color: darkcyan;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.2s linear;
+}
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+small{
+  color: grey;
+}
+
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: whitesmoke;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.1s;
+}
+
+/*botones de abajo*/
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+nav .navlist {
+  list-style-type: none;
+  padding-left: 30px;
+}
+nav .navlist li {
+  text-transform: uppercase;
+  color: whitesmoke;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+nav .navlist li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+nav .navlist li + li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+nav .navlist li + li + li {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+nav a:hover {
+  color: lightsalmon;
+  font-weight: bold;
+}
+
