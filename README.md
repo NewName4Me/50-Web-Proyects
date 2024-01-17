@@ -1,3 +1,5 @@
+Every excercise comes from https://github.com/bradtraversy/50projects50days thanks to bradtraversy
+
 # 50-Web-Proyects
 50 Web Proyects From Repository 50 Proyects 50 Days My Way
 
